@@ -43,7 +43,7 @@ function greetUser(name, time) {
     if (time === 'morning') {
         return 'Good morning ' + name
     }
-    else if (time == - 'afternoon') {
+    else if (time === 'afternoon') {
         return 'Good afternoon ' + name
     }
     else if (time === 'evening') {
@@ -101,13 +101,13 @@ function calculateGrade(grade) {
     if (grade >= 90) {
         return 'A'
     }
-    else if (grade > 80 && grade <= 89) {
+    else if (grade >= 89 && grade <= 80) {
         return 'B'
     }
-    else if (grade > 79 && grade <= 70) {
+    else if (grade >= 70 && grade <= 79) {
         return 'C'
     }
-    else if (grade > 69 && grade <= 60) {
+    else if (grade >= 60 && grade <= 69) {
         return 'D'
     }
     else {
