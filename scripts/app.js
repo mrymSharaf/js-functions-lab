@@ -95,3 +95,41 @@ function convertTemperature(temp, scale) {
     }
 }
 console.log('Exercise 8 Result:', convertTemperature(32, "C"));
+
+//10
+function calculateGrade(grade) {
+    if (grade >= 90) {
+        return 'A'
+    }
+    else if (grade > 80 && grade <= 89) {
+        return 'B'
+    }
+    else if (grade > 79 && grade <= 70) {
+        return 'C'
+    }
+    else if (grade > 69 && grade <= 60) {
+        return 'D'
+    }
+    else {
+        return 'F'
+    }
+
+}
+console.log('Exercise 10 Result:', calculateGrade(85));
+
+//11
+function createUsername(firstName, lastName) {
+    const fname = firstName.charAt(0) + firstName.charAt(1) + firstName.charAt(2)
+    const lname = lastName.charAt(0) + lastName.charAt(1) + lastName.charAt(2)
+    const total = firstName.length + lastName.length
+    return userName = fname + lname + total
+
+}
+console.log('Exercise 11 Result:', createUsername("Samantha", "Green"));
+
+
+//12
+function numArgs() {
+return arguments.length;
+}
+console.log('Exercise 12 Result:', numArgs(1, 2, 3, 4));
